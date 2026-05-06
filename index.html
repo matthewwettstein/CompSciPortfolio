@@ -7,6 +7,8 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+    <!--Start of transition-->
     <div class="transition">
         <div class="transition-row row-1"> <div class="block"></div><div class="block"></div><div class="block"></div>
             <div class="block"></div><div class="block"></div><div class="block"></div>
@@ -23,15 +25,50 @@
             </div>
             <div class="nav-items">
                 <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./contact.html">Contact</a>
+                <a href="./about.html">Games</a>
+                <a href="./contact.html">More info</a>
             </div>
         </nav>
 
-        <div class="hero">
+        <!--<div class="hero">
             <h1>Index</h1>
-        </div>
+        </div>-->
     </div>
+<!--End of transition-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://images.squarespace-cdn.com/content/v1/5fce63270356d927d7eecdbd/033e9988-2ac8-4cb9-8b9f-5bf05fb22dcb/gff.jpg" style="width:100%" style="height: 100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/1LEJIT9KGRC4nwTJ5vuS6H/a912e31c468fd32986f2818816135cc4/OnlineLearning_SouthAsia_Learning_Indoor_GettyImages-1071652068.jpg?fit=thumb" style="width:100%" style="height: 100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://www.eecs.mit.edu/wp-content/uploads/2021/06/compscihero-750x399.jpg" style="width:100%" style="height: 100%">
+      <div class="text"></div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    <hr style="height: 2px; background-color: red; border: none; margin: 10px;">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="./transition.js"></script>
 </body>
