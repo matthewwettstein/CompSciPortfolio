@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.set(".block", { visibility: "hidden" });
     });
 
-    const links = document.querySelectorAll("a");
+    const links = document.querySelectorAll("a:not(.no-transition)");
 
     links.forEach((link) => {
         link.addEventListener("click", (event) => {
