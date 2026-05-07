@@ -34,14 +34,18 @@
 }
 .hero {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;             
+    text-align: center;      
+    border-bottom: 2px solid red; 
+    padding-bottom: 20px;
 }
 
 .hero h1 {
     font-family: "VTC Carrie";
-    font-size: 15vw;
+    font-size: 10vw;
     line-height: 90%;
     color: white;
 }
@@ -154,3 +158,42 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+  .caption {
+    margin-top: 300px;
+    font-size: 50;
+    margin-left: 80px;
+    display: block;
+}
+.no-transition {
+  font-family: "VTC Carrie", sans-serif; 
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: white;
+  transition: color 0.3s ease;
+}
+.no-transition:hover {
+  color: blue;
+}
+.no-transition::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.no-transition:hover::after {
+  transform: scaleX(1);
+  background-color: blue;
+}
+figure {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0;
+}
